@@ -2,7 +2,6 @@
 \usepackage[x11names]{xcolor}
 \usepackage[english]{babel}
 \usepackage[textwidth=12cm,centering,margin=1in,verbose,bottom=2in]{geometry}
-\usepackage{tgpagella}
 \usepackage{fancyhdr}
 
 \fancypagestyle{first}{%
@@ -33,15 +32,15 @@
 
 \newenvironment{Group}[1]
 	{\noindent\begin{tabular*}{\textwidth}{@{}p{.8\linewidth}@{\extracolsep{\fill}}r@{}}
-		{\centering\fontsize{16}{20}\selectfont\ColText{#1}}\\[0.8em]\par}
+		{\fontsize{16}{20}\selectfont\ColText{#1}}\\[0.8em]}
 	{\end{tabular*}}
 
 	
 \newcommand*\Item[2]{%
-	\sffamily#1\dotfill & #2}
+	\sffamily\textbf{#1}\dotfill & #2}
 
 \newcommand*\Desc[1]{%
-	\hspace*{1em}\footnotesize #1}
+	\sffamily\hspace*{1em}\footnotesize #1}
 	
 	
 		
@@ -73,13 +72,14 @@
 	\vfill{}
 	
 	\begin{Group}{Mini Salvo Burgers}
-		Served on a Kaiser Roll
 		\Item{Small Salvo Special}{4.75} \\
 		\Item{Small Bacon Cheeseburger}{4.75} \\
 		\Item{Small Southwest Burger}{4.50} \\
 		\Item{Small Cheeseburger}{4.00} \\
 		\Item{Small Hamburger}{3.50} \\
 	\end{Group}
+	\\[\baselineskip]
+	\centering Served on a Kaiser Roll \\
 	
 	\vfill{}
 	
