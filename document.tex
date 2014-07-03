@@ -1,0 +1,165 @@
+\documentclass[10pt,notitlepage]{article}
+\usepackage[x11names]{xcolor}
+\usepackage[english]{babel}
+\usepackage[textwidth=12cm,centering,margin=1in,verbose,bottom=2in]{geometry}
+\usepackage{tgpagella}
+\usepackage{fancyhdr}
+
+\fancypagestyle{first}{%
+	\fancyhf{}
+	\headheight 70pt
+	\footskip 30pt
+	\fancyhead[C]{\Large Salvo's Coyote Grill\\132 W. Center Street, Whitewater, WI\\262-472-0510\\Great for takeout, but give us 20 minutes}
+	\fancyfoot[C]{\large All Sandwiches come with Handful of Chips and Pickel Spear\\Lettuce - Tomato - Onions available upon request}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+\fancypagestyle{second}{%
+	\fancyhf{}
+	\headheight 24pt
+	\footskip 70pt
+	\fancyhead[C]{\LARGE Salvo's Coyote Grill}
+	\fancyfoot[C]{\large Daily Lunch Specials\hspace{0.2in}Happy Hour 4-7 daily\hspace{0.2in}Nightly Drink Specials\\Grill Open until 10pm\hspace{0.2in}Fryer Open until 1am\\Undercooked meats can be hazardous to your health}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{second}
+
+\renewcommand{\arraystretch}{0.9}% Tighter
+
+\newcommand*\ColText[1]{\uppercase{#1}}
+
+\newenvironment{Group}[1]
+	{\noindent\begin{tabular*}{\textwidth}{@{}p{.8\linewidth}@{\extracolsep{\fill}}r@{}}
+		{\centering\fontsize{16}{20}\selectfont\ColText{#1}}\\[0.8em]\par}
+	{\end{tabular*}}
+
+	
+\newcommand*\Item[2]{%
+	\sffamily#1 & #2}
+
+\newcommand*\Desc[1]{%
+	\hspace*{1em}\footnotesize #1}
+	
+	
+		
+\begin{document}\thispagestyle{first}
+	
+	\begin{Group}{Salvo Burgers}
+		\Item{Large Salvo Special}{7.00} \\
+		\Desc{Served on a bakery roll, topped with Smoked Ham and Swiss Cheese} \\
+		\Item{Coyote Burger}{7.25} \\
+		\Desc{Served on Grilled Texas Toast, with BBQ Sauce, Onion Ring, Bacon, Pepperjack Cheese} \\
+		\Item{Ultimate}{7.50} \\
+		\Desc{Served on Grilled Texas Toast, with 4 cheeses, Special Sauce, and Fried Onions} \\
+		\Item{Blazing Britt Burger}{7.50} \\
+		\Desc{Served on Grilled Texas Toast, wtih Pepperjack Cheese, Bacon, Fried Onions, Jalape\~{n}o Bottle Caps, Chipotle BBQ, and Cajun Seasoning} \\
+		\Item{Bacon Cheeseburger}{7.00} \\
+		\Desc{Served on Bakery Roll, with Smoked Bacon and Swiss Cheese} \\
+		\Item{Southwest Burger}{7.00} \\
+		\Desc{Served on Bakery Roll, with Cajun Spice, Salsa, and Cheddar Cheese} \\
+		\Item{Cheeseburger}{6.00} \\
+		\Desc{Just like the ones served in Paradise} \\
+		\Item{Hamburger}{5.50} \\
+		\Desc{For you real Americans} \\
+		\Item{Grilled Ranchero Melt}{7.25} \\
+		\Desc{Served on Grilled Texas Toast, with Pepperjack and Swiss Cheese, Peppercorn Ranch, Ham, and Fried Onions} \\
+		\Item{Pile Driver}{7.25} \\
+		\Desc{Served on a Bakery Roll, with Cheedar and Pepperjack Cheese, Stacked Ham, and Fried Onions} \\
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{Mini Salvo Burgers}
+		Served on a Kaiser Roll
+		\Item{Small Salvo Special}{4.75} \\
+		\Item{Small Bacon Cheeseburger}{4.75} \\
+		\Item{Small Southwest Burger}{4.50} \\
+		\Item{Small Cheeseburger}{4.00} \\
+		\Item{Small Hamburger}{3.50} \\
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{Chicken Sandwiches}
+		\Item{Chicken Southwest Style}{6.50} \\
+		\Desc{Served on a Kaiser Roll with Cajun Spice, Salsa, and Cheddar} \\
+		\Item{Chicken Cordon Bleu}{6.50} \\
+		\Desc{Served with Smoked Ham and Swiss Cheese} \\
+		\Item{Chicken with Cheese}{5.75} \\
+		\Desc{Served with your choice of cheese} \\
+		\Item{Chicken with No Fixins}{5.25} \\
+		\Desc{For those of you with enough adventure in your life!} \\
+		\Item{Spicy Mesquite Chicken} \\
+		\Desc{With Bacon, Swiss Cheese, and BBQ Sauce} \\
+		\Item{Spicy Chicken Bacon Ranch}{6.75} \\
+		\Desc{With Bacon, Pepperjack Cheese, and Ranch Dressing} \\
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{Other Sandwiches}
+		\Item{Pork Chop Sandwich}{5.50} \\
+		\Desc{5oz. Butterfly Chop} \\
+		\Item{Fish Sandwich}{5.00} \\
+		\Desc{2 Fillets of Battered Cod} \\
+		\Item{Steak Sandwich}{9.00} \\
+		\Desc{6oz.} \\
+		\Item{Ham and Cheese Sandwich}{5.25} \\
+		\Desc{Sliced thin and stacked high} \\
+		\Item{Ham Sandwich}{4.75} \\
+		\Desc{Sliced thin and stacked high} \\
+		\Item{Grilled Cheese}{5.50} \\
+		\Desc{Served on Texas Toast with 4 kinds of cheese} \\
+		\Item{Grilled Cheese with Ham}{7.00} \\
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{From the Fryer}
+		\Item{Chicken Strips (4 tender breast strips)}{6.00} \\
+		\Item{Chicken Drummies (5 large chicken wings)}{6.00} \\
+		\Item{Hot Wings (6 spicy wings)}{6.00} \\
+		\Item{Battered Mushrooms}{4.00} \\
+		\Item{Steak Cut Onion Rings}{4.00} \\
+		\Item{Cheese Curds}{4.00} \\
+		\Item{Mozzarella Sticks}{4.00} \\
+		\Item{Steak Cut Fries}{3.00} \\
+		\Item{Freedom Fries (Plain or ranch seasoned)}{2.50} \\
+		\Item{Mini Tacos (10 mini tacos with salsa and sour cream)}{4.00} \\
+		\Item{Broccoli Cheddar Bites}{4.50} \\
+		\Item{Mini Corndogs}{4.00} \\
+		\Item{Sweet Corn Nuggets}{4.00} \\
+		\Item{Jalepe\~{n}o Bottlecaps}{4.00} \\
+		\Item{Combo Basket}{5.00} \\
+		\Desc{Broccoli cheddar bites, jalape\~{n}o bottlecaps, sweet corn nuggets, mini corndogs, cheese curds, onion rings, and fries} \\
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{Baskets}
+		\Item{Fish Basket}{7.00} \\
+		\Desc{3 pieces of Battered Cod, fries, and tartar sauce} \\
+		\Item{Chicken Strip Basket}{7.00} \\
+		\Desc{4 pieces of crispy chicken strips and fries} \\
+		Baskets include coleslaw and marble rye bread
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{Soup}
+		\Item{Soup of the Day}{Cup 2.00\hspace{0.2in}Bowl 3.00} \\
+		\Item{Chili (in season)}{3.00} \\
+		\Item{Chili Deluxe}{4.00} \\
+		\Desc{Shredded cheese, sour cream, and chopped onions} \\
+	\end{Group}
+	
+	\vfill{}
+	
+	\begin{Group}{Extras}
+	\end{Group}
+	\centering Bacon: 1.00\hspace{0.2in}Egg: 1.00\hspace{0.2in}Texas Toast: 0.50\hspace{0.2in}Cheese: 0.50\hspace{0.2in}Extra Sauce: 0.50\par
+	
+\end{document}
