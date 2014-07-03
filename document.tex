@@ -2,13 +2,15 @@
 \usepackage[x11names]{xcolor}
 \usepackage[english]{babel}
 \usepackage[textwidth=12cm,centering,margin=1in,verbose,bottom=2in]{geometry}
+\usepackage{graphicx}
+\usepackage{grffile}
 \usepackage{fancyhdr}
 
 \fancypagestyle{first}{%
 	\fancyhf{}
-	\headheight 70pt
+	\headheight 77pt
 	\footskip 30pt
-	\fancyhead[C]{\Large Salvo's Coyote Grill\\132 W. Center Street, Whitewater, WI\\262-472-0510\\Great for takeout, but give us 20 minutes}
+	\fancyhead[C]{\textbf{\Huge Salvo's Coyote Grill}\\\Large 132 W. Center Street, Whitewater, WI\\262-472-0510\\Great for takeout, but give us 20 minutes}
 	\fancyfoot[C]{\large All Sandwiches come with Handful of Chips and Pickel Spear\\Lettuce - Tomato - Onions available upon request}
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
@@ -16,9 +18,11 @@
 
 \fancypagestyle{second}{%
 	\fancyhf{}
-	\headheight 24pt
+	\headheight 30pt
 	\footskip 70pt
-	\fancyhead[C]{\LARGE Salvo's Coyote Grill}
+	%\fancyhead[C]{\Huge \textbf{Salvo's Coyote Grill}}
+	\topmargin -100pt
+	\fancyhead[C]{\includegraphics[height=1.5in]{coyote grill logo wide.png}}
 	\fancyfoot[C]{\large Daily Lunch Specials\hspace{0.2in}Happy Hour 4-7 daily\hspace{0.2in}Nightly Drink Specials\\Grill Open until 10pm\hspace{0.2in}Fryer Open until 1am\\Undercooked meats can be hazardous to your health}
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
@@ -49,7 +53,7 @@
 	\begin{Group}{Salvo Burgers}
 		\Item{Large Salvo Special}{7.00} \\
 		\Desc{Served on a bakery roll, topped with Smoked Ham and Swiss Cheese} \\
-		\Item{Coyote Burger}{7.25} \\
+		\Item{Coyote Burger}{7.50} \\
 		\Desc{Served on Grilled Texas Toast, with BBQ Sauce, Onion Ring, Bacon, Pepperjack Cheese} \\
 		\Item{Ultimate}{7.50} \\
 		\Desc{Served on Grilled Texas Toast, with 4 cheeses, Special Sauce, and Fried Onions} \\
@@ -63,9 +67,9 @@
 		\Desc{Just like the ones served in Paradise} \\
 		\Item{Hamburger}{5.50} \\
 		\Desc{For you real Americans} \\
-		\Item{Grilled Ranchero Melt}{7.25} \\
+		\Item{Grilled Ranchero Melt}{7.50} \\
 		\Desc{Served on Grilled Texas Toast, with Pepperjack and Swiss Cheese, Peppercorn Ranch, Ham, and Fried Onions} \\
-		\Item{Pile Driver}{7.25} \\
+		\Item{Pile Driver}{7.50} \\
 		\Desc{Served on a Bakery Roll, with Cheedar and Pepperjack Cheese, Stacked Ham, and Fried Onions} \\
 	\end{Group}
 	
@@ -97,6 +101,8 @@
 		\Item{Spicy Chicken Bacon Ranch}{6.75} \\
 		\Desc{With Bacon, Pepperjack Cheese, and Ranch Dressing} \\
 	\end{Group}
+	\\[\baselineskip]
+	\centering Served on a Kaiser Roll \\
 	
 	\vfill{}
 	
@@ -140,12 +146,13 @@
 	\vfill{}
 	
 	\begin{Group}{Baskets}
-		\Item{Fish Basket}{7.00} \\
+		\Item{Fish Basket}{7.50} \\
 		\Desc{3 pieces of Battered Cod, fries, and tartar sauce} \\
-		\Item{Chicken Strip Basket}{7.00} \\
+		\Item{Chicken Strip Basket}{7.50} \\
 		\Desc{4 pieces of crispy chicken strips and fries} \\
-		Baskets include coleslaw and marble rye bread
 	\end{Group}
+	\\[\baselineskip]
+	\centering Baskets include coleslaw and marble rye bread \\
 	
 	\vfill{}
 	
