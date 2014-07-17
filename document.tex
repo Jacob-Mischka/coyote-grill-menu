@@ -5,6 +5,29 @@
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{fancyhdr}
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{0pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\color{brown}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+
+\pgfpagesuselayout{boxed}
 
 \fancypagestyle{first}{%
 	\fancyhf{}
@@ -46,13 +69,11 @@
 
 	
 \newcommand*\Item[2]{%
-	\sffamily\textbf{#1}\dotfill & #2}
+	\sffamily\textbf{\large#1}\dotfill & \large#2}
 
 \newcommand*\Desc[1]{%
-	\sffamily\hspace*{1em}\small #1}
-	
-	
-		
+	\sffamily\hspace*{0.5cm}#1}
+
 \begin{document}\thispagestyle{first}
 	
 	\begin{Group}{Salvo Burgers}
@@ -63,7 +84,7 @@
 		\Item{Ultimate}{7.50} \\
 		\Desc{Served on Grilled Texas Toast, with 4 cheeses, Special Sauce, and Fried Onions} \\
 		\Item{Blazing Britt Burger}{7.50} \\
-		\Desc{Served on Grilled Texas Toast, with Pepperjack Cheese, Bacon, Fried Onions, Jalape\~{n}o Bottle Caps, Chipotle BBQ, and Cajun Seasoning} \\
+		\Desc{Served on Grilled Texas Toast, with Pepperjack Cheese, Bacon, Fried Onions, Jalape\~{n}o \\\sffamily\hspace*{0.5cm}Bottle Caps, Chipotle BBQ, and Cajun Seasoning} \\
 		\Item{Bacon Cheeseburger}{7.00} \\
 		\Desc{Served on Bakery Roll, with Smoked Bacon and Swiss Cheese} \\
 		\Item{Southwest Burger}{7.00} \\
@@ -73,9 +94,9 @@
 		\Item{Hamburger}{5.50} \\
 		\Desc{For you real Americans} \\
 		\Item{Grilled Ranchero Melt}{7.50} \\
-		\Desc{Served on Grilled Texas Toast, with Pepperjack and Swiss Cheese, Peppercorn Ranch, Ham, and Fried Onions} \\
+		\Desc{Served on Grilled Texas Toast, with Pepperjack and Swiss Cheese, Peppercorn Ranch, \\\sffamily\hspace*{0.5cm}Ham, and Fried Onions} \\
 		\Item{Pile Driver}{7.50} \\
-		\Desc{Served on a Bakery Roll, with Cheddar and Pepperjack Cheese, Stacked Ham, and Fried Onions} \\
+		\Desc{Served on a Bakery Roll, with Cheddar and Pepperjack Cheese, Stacked Ham, and Fried \\\sffamily\hspace*{0.5cm}Onions} \\
 	\end{Group}
 	
 	\vfill{}
@@ -116,12 +137,10 @@
 		\Desc{5oz. Butterfly Chop} \\
 		\Item{Fish Sandwich}{5.00} \\
 		\Desc{2 Fillets of Battered Cod} \\
-		\Item{Steak Sandwich}{9.00} \\
-		\Desc{6oz.} \\
-		\Item{Ham and Cheese Sandwich}{5.25} \\
-		\Desc{Sliced thin and stacked high} \\
+		\Item{Steak Sandwich (6oz.)}{9.00} \\
 		\Item{Ham Sandwich}{4.75} \\
 		\Desc{Sliced thin and stacked high} \\
+		\Item{Ham and Cheese Sandwich}{5.25} \\
 		\Item{Grilled Cheese}{5.50} \\
 		\Desc{Served on Texas Toast with 4 kinds of cheese} \\
 		\Item{Grilled Cheese with Ham}{7.00} \\
@@ -145,7 +164,7 @@
 		\Item{Sweet Corn Nuggets}{4.00} \\
 		\Item{Jalepe\~{n}o Bottlecaps}{4.00} \\
 		\Item{Combo Basket}{5.00} \\
-		\Desc{Broccoli cheddar bites, jalape\~{n}o bottlecaps, sweet corn nuggets, mini corndogs, cheese curds, onion rings, and fries} \\
+		\Desc{Broccoli cheddar bites, jalape\~{n}o bottlecaps, sweet corn nuggets, mini corndogs, cheese \\\sffamily\hspace*{0.5cm}curds, onion rings, and fries} \\
 	\end{Group}
 	
 	\vfill{}
